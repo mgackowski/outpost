@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    enum State
+    public enum State
     {
         Closed,
         Minigame,
         Lockdown,
+        Opening,
         Open
     }
 
     public GameObject doorMinigame;
 
-    private State state = State.Closed;
+    public State state = State.Closed;
     private bool interactable = false;
 
     // Start is called before the first frame update
@@ -33,6 +34,13 @@ public class Door : MonoBehaviour
             interactable = false;
             doorMinigame.SetActive(true);
 
+        }
+
+        if(state == State.Opening)
+        {
+            gameObject.GetComponent<Collider2D>().enabled = false;
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
+            state = State.Open;
         }
         
     }
@@ -55,6 +63,10 @@ public class Door : MonoBehaviour
         if (state == State.Minigame)
         {
             state = State.Closed;
+            doorMinigame.SetActive(false);
+        }
+        else if (state == State.Lockdown)
+        {
             doorMinigame.SetActive(false);
         }
 
