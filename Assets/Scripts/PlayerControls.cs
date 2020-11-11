@@ -9,12 +9,15 @@ public class PlayerControls : MonoBehaviour
 {
     private float moveHorizontal;
     private float moveVertical;
+    private bool mainButtonPressed;
     private Vector2 movement;
     private Text debugText;
 
     public float speed;
     public float orientation = 180;
     public CircleCollider2D interactionArea;
+    public float interactionRange = 0.6f;
+    public float interactionVerticalOffset = -0.3f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +31,17 @@ public class PlayerControls : MonoBehaviour
 
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         moveVertical = Input.GetAxisRaw("Vertical");
+        mainButtonPressed = Input.GetButton("Fire1");
+
         movement = new Vector2(moveHorizontal, moveVertical);
         if (movement.magnitude > 1) movement = movement.normalized; //slower diagonal mvmt on keyboard
 
         if (movement.magnitude > 0) orientation = Vector2.SignedAngle(Vector2.up, movement);
 
-        interactionArea.offset = Quaternion.Euler(0, 0, orientation) * Vector2.up;
+        //interactionArea.enabled = mainButtonPressed;
+        Vector2 offset = Quaternion.Euler(0, 0, orientation) * Vector2.up * interactionRange;
+        offset.y += interactionVerticalOffset;
+        interactionArea.offset = offset;
         debugText.text = orientation.ToString();
 
     }
