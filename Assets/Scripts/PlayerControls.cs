@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour
 {
+    public Animator animator;
     private float moveHorizontal;
     private float moveVertical;
     private bool mainButtonPressed;
@@ -43,6 +44,9 @@ public class PlayerControls : MonoBehaviour
         offset.y += interactionVerticalOffset;
         interactionArea.offset = offset;
         debugText.text = orientation.ToString();
+
+        animator.SetFloat("direction", orientation * -1);
+        animator.SetFloat("speed", movement.magnitude);
 
     }
 

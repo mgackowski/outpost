@@ -20,6 +20,7 @@ public class NPC : MonoBehaviour
     public float health;
     public float loseRate = 1;
     public GameObject cprMinigame;
+    public float chanceOfZombie = 0.25f;
 
     // Start is called before the first frame update
     void Start()
@@ -77,6 +78,7 @@ public class NPC : MonoBehaviour
             case NPCState.Dead:
                 ColorUtility.TryParseHtmlString("#444444", out newColor);
                 GetComponent<Renderer>().material.color = newColor;
+                RiskBecomingZombie();
                 break;
             case NPCState.Zombie:
                 ColorUtility.TryParseHtmlString("#68826E", out newColor);
@@ -89,6 +91,17 @@ public class NPC : MonoBehaviour
     public void Heal()
     {
         health = maxHealth;
+    }
+
+    private void RiskBecomingZombie()
+    {
+        //create random
+        //if chanceofZombie
+            //kick off short timer
+            //change state to zombie
+            //set message to UI
+            //set camera target to this object
+            //stop game by changing physics speed
     }
 
 }
