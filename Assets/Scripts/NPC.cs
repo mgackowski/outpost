@@ -24,6 +24,8 @@ public class NPC : MonoBehaviour
     public TextControl textBox;
     public CameraTracker killCam;
 
+    private bool interactable = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,28 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (interactable && Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Play minigame");
+            interactable = false;
+            cprMinigame.SetActive(true);
+
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerFocus") && state != NPCState.Dead)
+        {
+            //gameObject.GetComponent<Renderer>().material.color = Color.white;
+            interactable = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        interactable = false;
+        cprMinigame.SetActive(false);
     }
 
     IEnumerator LoseHealth()
