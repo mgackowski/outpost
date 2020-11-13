@@ -1798,6 +1798,7 @@ MonoBehaviour:
   chanceOfZombie: 0.25
   textBox: {fileID: 553477753}
   killCam: {fileID: 519420030}
+  player: {fileID: 1964852520}
 --- !u!212 &1762094850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1973,7 +1974,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1964852522
 Transform:
   m_ObjectHideFlags: 0
@@ -2008,6 +2009,7 @@ MonoBehaviour:
   interactionArea: {fileID: 1105754795}
   interactionRange: 0.6
   interactionVerticalOffset: -0.1
+  carrying: {fileID: 0}
 --- !u!50 &1964852524
 Rigidbody2D:
   serializedVersion: 4
@@ -2036,7 +2038,7 @@ SortingGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964852520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0

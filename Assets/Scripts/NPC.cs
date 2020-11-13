@@ -23,8 +23,10 @@ public class NPC : MonoBehaviour
     public float chanceOfZombie = 0.25f;
     public TextControl textBox;
     public CameraTracker killCam;
+    public GameObject player;
 
     private bool interactable = false;
+    private bool carried = true;
 
     // Start is called before the first frame update
     void Start()
@@ -43,13 +45,20 @@ public class NPC : MonoBehaviour
             cprMinigame.SetActive(true);
 
         }
+        else if (interactable && Input.GetButtonDown("Fire2"))
+        {
+            Debug.Log("Carry NPC");
+            interactable = false;
+            carried = true;
+            player.GetComponent<PlayerControls>().PickUp(gameObject);
+
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("PlayerFocus") && state != NPCState.Dead)
         {
-            //gameObject.GetComponent<Renderer>().material.color = Color.white;
             interactable = true;
         }
     }
@@ -69,8 +78,6 @@ public class NPC : MonoBehaviour
             else if (health > 10) ChangeState(NPCState.Convulsing);
             else if (health > 0) ChangeState(NPCState.Flatlining);
             else ChangeState(NPCState.Dead);
-
-            //Debug.Log(state);
 
             health -= loseRate;
             yield return new WaitForSeconds(0.1f);
