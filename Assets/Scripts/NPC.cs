@@ -21,6 +21,8 @@ public class NPC : MonoBehaviour
     public float loseRate = 1;
     public GameObject cprMinigame;
     public float chanceOfZombie = 0.25f;
+    public TextControl textBox;
+    public CameraTracker killCam;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,8 @@ public class NPC : MonoBehaviour
         }
 
     }
+
+
 
     void ChangeState(NPCState newState)
     {
@@ -95,13 +99,21 @@ public class NPC : MonoBehaviour
 
     private void RiskBecomingZombie()
     {
-        //create random
-        //if chanceofZombie
-            //kick off short timer
-            //change state to zombie
-            //set message to UI
-            //set camera target to this object
-            //stop game by changing physics speed
+        System.Random rnd = new System.Random();
+        if(rnd.NextDouble() < chanceOfZombie)
+        {
+            TurnToZombie();
+        }
+
+    }
+
+    private void TurnToZombie()
+    {
+        state = NPCState.Zombie;
+        textBox.ChangeAndFade("One of dead was infected. You have no chance to win this.\nGAME OVER", 5f);
+        killCam.target = gameObject.transform;
+        //Time.timeScale = 0; //GAME OVER
+
     }
 
 }
