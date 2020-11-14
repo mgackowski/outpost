@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 1
-  oxygen: 5
+  oxygen: 60
   oxygenDepletionRate: 1
   gameplayText: {fileID: 553477753}
   timerText: {fileID: 839605269}
