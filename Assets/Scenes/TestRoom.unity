@@ -2307,10 +2307,11 @@ MonoBehaviour:
   state: 1
   oxygen: 5
   oxygenDepletionRate: 1
-  gameplayText: {fileID: 553477754}
+  gameplayText: {fileID: 553477753}
   timerText: {fileID: 839605269}
   fade: {fileID: 2130715201}
   npcDrop: {fileID: 853557402}
+  player: {fileID: 1964852520}
 --- !u!4 &2076472725
 Transform:
   m_ObjectHideFlags: 0
@@ -2356,7 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7731110cf1a424988b8b02afb69faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 3000
+  fadeDuration: 3
 --- !u!114 &2130715202
 MonoBehaviour:
   m_ObjectHideFlags: 0
