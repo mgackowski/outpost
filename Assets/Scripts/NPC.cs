@@ -26,7 +26,7 @@ public class NPC : MonoBehaviour
     public GameObject player;
 
     private bool interactable = false;
-    private bool carried = false;
+    public bool carried = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,7 @@ public class NPC : MonoBehaviour
         }
         else if (interactable && Input.GetButtonDown("Fire2"))
         {
-            if (!carried)
+            if (!carried && player.GetComponent<PlayerControls>().carrying == null)
             {
                 Debug.Log("Carry NPC");
                 interactable = false;
