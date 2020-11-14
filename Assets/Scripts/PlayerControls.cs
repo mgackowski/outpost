@@ -20,6 +20,7 @@ public class PlayerControls : MonoBehaviour
     public float interactionRange = 0.6f;
     public float interactionVerticalOffset = -0.3f;
     public GameObject carrying = null;
+    public float carryingSpeed = 0.6f;
 
     // Start is called before the first frame update
     void Start()
@@ -61,7 +62,15 @@ public class PlayerControls : MonoBehaviour
 
     void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().velocity = movement * speed;
+        if (carrying != null)
+        {
+            GetComponent<Rigidbody2D>().velocity = movement * speed * carryingSpeed;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().velocity = movement * speed;
+        }
+        
     }
 
     public void PickUp(GameObject target)
@@ -70,6 +79,7 @@ public class PlayerControls : MonoBehaviour
         carrying.transform.SetParent(transform);
         carrying.transform.GetChild(0).gameObject.SetActive(false);
         carrying.GetComponent<Collider2D>().enabled = false;
+        animator.speed = carryingSpeed;
     }
 
     public void Drop()
@@ -78,6 +88,7 @@ public class PlayerControls : MonoBehaviour
         carrying.transform.GetChild(0).gameObject.SetActive(true);
         carrying.GetComponent<Collider2D>().enabled = true;
         carrying = null;
+        animator.speed = 1f;
     }
 
 
