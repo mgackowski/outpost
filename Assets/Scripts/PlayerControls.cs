@@ -63,14 +63,21 @@ public class PlayerControls : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().velocity = movement * speed;
     }
+
     public void PickUp(GameObject target)
     {
-
         carrying = target;
         carrying.transform.SetParent(transform);
         carrying.transform.GetChild(0).gameObject.SetActive(false);
         carrying.GetComponent<Collider2D>().enabled = false;
+    }
 
+    public void Drop()
+    {
+        carrying.transform.SetParent(null);
+        carrying.transform.GetChild(0).gameObject.SetActive(true);
+        carrying.GetComponent<Collider2D>().enabled = true;
+        carrying = null;
     }
 
 
