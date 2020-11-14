@@ -10,7 +10,7 @@ public class PlayerControls : MonoBehaviour
     public Animator animator;
     private float moveHorizontal;
     private float moveVertical;
-    private bool mainButtonPressed;
+    //private bool mainButtonPressed;
     private Vector2 movement;
     private Text debugText;
 
@@ -34,7 +34,7 @@ public class PlayerControls : MonoBehaviour
 
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         moveVertical = Input.GetAxisRaw("Vertical");
-        mainButtonPressed = Input.GetButton("Fire1");
+        //mainButtonPressed = Input.GetButton("Fire1");
 
         movement = new Vector2(moveHorizontal, moveVertical);
         if (movement.magnitude > 1) movement = movement.normalized; //slower diagonal mvmt on keyboard
@@ -45,7 +45,7 @@ public class PlayerControls : MonoBehaviour
         Vector2 offset = Quaternion.Euler(0, 0, orientation) * Vector2.up * interactionRange;
         offset.y += interactionVerticalOffset;
         interactionArea.offset = offset;
-        debugText.text = orientation.ToString();
+        //debugText.text = orientation.ToString();
 
         animator.SetFloat("direction", orientation * -1);
         animator.SetFloat("speed", movement.magnitude);
