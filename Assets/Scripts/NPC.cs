@@ -21,6 +21,12 @@ public class NPC : MonoBehaviour
     public float loseRate = 1;
     public GameObject cprMinigame;
     public float chanceOfZombie = 0.25f;
+    public TextControl textBox;
+    public CameraTracker killCam;
+    public GameObject player;
+
+    private bool interactable = false;
+    private bool carried = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +38,44 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (interactable && Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Play minigame");
+            interactable = false;
+            cprMinigame.SetActive(true);
+
+        }
+        else if (interactable && Input.GetButtonDown("Fire2"))
+        {
+            if (!carried)
+            {
+                Debug.Log("Carry NPC");
+                interactable = false;
+                carried = true;
+                player.GetComponent<PlayerControls>().PickUp(gameObject);
+            }
+        }
+        else if (carried && Input.GetButtonDown("Fire2"))
+        {
+            Debug.Log("Drop NPC");
+            interactable = true;
+            carried = false;
+            player.GetComponent<PlayerControls>().Drop();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerFocus") && state != NPCState.Dead)
+        {
+            interactable = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        interactable = false;
+        cprMinigame.SetActive(false);
     }
 
     IEnumerator LoseHealth()
@@ -45,13 +88,13 @@ public class NPC : MonoBehaviour
             else if (health > 0) ChangeState(NPCState.Flatlining);
             else ChangeState(NPCState.Dead);
 
-            //Debug.Log(state);
-
             health -= loseRate;
             yield return new WaitForSeconds(0.1f);
         }
 
     }
+
+
 
     void ChangeState(NPCState newState)
     {
@@ -95,13 +138,21 @@ public class NPC : MonoBehaviour
 
     private void RiskBecomingZombie()
     {
-        //create random
-        //if chanceofZombie
-            //kick off short timer
-            //change state to zombie
-            //set message to UI
-            //set camera target to this object
-            //stop game by changing physics speed
+        System.Random rnd = new System.Random();
+        if(rnd.NextDouble() < chanceOfZombie)
+        {
+            TurnToZombie();
+        }
+
+    }
+
+    private void TurnToZombie()
+    {
+        state = NPCState.Zombie;
+        textBox.ChangeAndFade("One of dead was infected. You have no chance to win this.\nGAME OVER", 5f);
+        killCam.target = gameObject.transform;
+        //Time.timeScale = 0; //GAME OVER
+
     }
 
 }

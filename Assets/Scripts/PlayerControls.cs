@@ -19,6 +19,7 @@ public class PlayerControls : MonoBehaviour
     public CircleCollider2D interactionArea;
     public float interactionRange = 0.6f;
     public float interactionVerticalOffset = -0.3f;
+    public GameObject carrying = null;
 
     // Start is called before the first frame update
     void Start()
@@ -48,11 +49,35 @@ public class PlayerControls : MonoBehaviour
         animator.SetFloat("direction", orientation * -1);
         animator.SetFloat("speed", movement.magnitude);
 
+        if (carrying != null)
+        {
+            Vector2 carriedPosition = interactionArea.offset;
+            carriedPosition.y += 0.5f;
+            carrying.transform.localPosition = carriedPosition;
+            
+        }
+
     }
 
     void FixedUpdate()
     {
         GetComponent<Rigidbody2D>().velocity = movement * speed;
+    }
+
+    public void PickUp(GameObject target)
+    {
+        carrying = target;
+        carrying.transform.SetParent(transform);
+        carrying.transform.GetChild(0).gameObject.SetActive(false);
+        carrying.GetComponent<Collider2D>().enabled = false;
+    }
+
+    public void Drop()
+    {
+        carrying.transform.SetParent(null);
+        carrying.transform.GetChild(0).gameObject.SetActive(true);
+        carrying.GetComponent<Collider2D>().enabled = true;
+        carrying = null;
     }
 
 
