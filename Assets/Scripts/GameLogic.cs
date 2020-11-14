@@ -27,7 +27,7 @@ public class GameLogic : MonoBehaviour
     public DropArea npcDrop;
     public GameObject player;
 
-    public Door[] = new Door[3];
+    //public Door[] = new Door[3];
 
     // Start is called before the first frame update
     void Start()
