@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: b7a664c0ab32f9d4098c9ab604a82c43
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -161883472805686174
+    second: npc_green_0
+  - first:
+      213: 7722095524242401883
+    second: npc_green_1
+  - first:
+      213: -5218707454937777387
+    second: npc_green_2
+  - first:
+      213: 6964380886863692333
+    second: npc_green_3
+  - first:
+      213: 4929993105739470529
+    second: npc_green_4
+  - first:
+      213: 8828965831186701358
+    second: npc_green_5
+  - first:
+      213: -7260827155094712894
+    second: npc_green_6
+  - first:
+      213: -1255242422122192590
+    second: npc_green_7
+  - first:
+      213: -7235780455104562347
+    second: npc_green_8
+  - first:
+      213: 4734545241403458363
+    second: npc_green_9
+  - first:
+      213: -8134758393947777095
+    second: npc_green_10
+  - first:
+      213: 1671779750483759377
+    second: npc_green_11
+  - first:
+      213: 5521780483292744840
+    second: npc_green_12
+  - first:
+      213: 8614548495255546488
+    second: npc_green_13
+  - first:
+      213: -7708510474913664292
+    second: npc_green_14
+  - first:
+      213: -467967743103252542
+    second: npc_green_15
+  - first:
+      213: -4842493127669967211
+    second: npc_green_16
+  - first:
+      213: -6151800645005507636
+    second: npc_green_17
+  - first:
+      213: -7598030515937244681
+    second: npc_green_18
+  - first:
+      213: -70613039847982678
+    second: npc_green_19
+  - first:
+      213: 2972945189395089598
+    second: npc_green_20
+  - first:
+      213: -1864284800041652209
+    second: npc_green_21
+  - first:
+      213: 2879758198720401856
+    second: npc_green_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_green_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2641964d6dfd0cdf0800000000000000
+      internalID: -161883472805686174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_1
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a2a1447f46a2b60800000000000000
+      internalID: 7722095524242401883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b30c9383d6397b0800000000000000
+      internalID: -5218707454937777387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_3
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22c70a848376a060800000000000000
+      internalID: 6964380886863692333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6d9b40c9ada6440800000000000000
+      internalID: 4929993105739470529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cd1f545a9c68a70800000000000000
+      internalID: 8828965831186701358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_6
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdc1150c2c5c3b90800000000000000
+      internalID: -7260827155094712894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_7
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e76aeaab749ee0800000000000000
+      internalID: -1255242422122192590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_8
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b37cc4308559b90800000000000000
+      internalID: -7235780455104562347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_9
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b338ed6ffcb74b140800000000000000
+      internalID: 4734545241403458363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b79d1b27588b1f80800000000000000
+      internalID: -8134758393947777095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111964a53da533710800000000000000
+      internalID: 1671779750483759377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c495a081e41ac40800000000000000
+      internalID: 5521780483292744840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_13
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a2510f6360d8770800000000000000
+      internalID: 8614548495255546488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_14
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2b463809ed50590800000000000000
+      internalID: -7708510474913664292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_15
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c74df921d17189f0800000000000000
+      internalID: -467967743103252542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_16
+      rect:
+        serializedVersion: 2
+        x: 4232
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59616f138220cccb0800000000000000
+      internalID: -4842493127669967211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_17
+      rect:
+        serializedVersion: 2
+        x: 4937
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc38d6138e960aaa0800000000000000
+      internalID: -6151800645005507636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1394
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f98bf8708f5e8690800000000000000
+      internalID: -7598030515937244681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 720
+        width: 509
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b95b70d1250ff0800000000000000
+      internalID: -70613039847982678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_20
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8c99ef5e5024920800000000000000
+      internalID: 2972945189395089598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_21
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f007b5d0adab026e0800000000000000
+      internalID: -1864284800041652209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_green_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c19fb9f2d4f6f720800000000000000
+      internalID: 2879758198720401856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

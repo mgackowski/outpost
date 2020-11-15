@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: e69a00e19a0822c45afcf0c6b50e1a0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5453952338721599192
+    second: npc_brown_0
+  - first:
+      213: 5481825969317597617
+    second: npc_brown_1
+  - first:
+      213: -7170235287487833761
+    second: npc_brown_2
+  - first:
+      213: 1706436060659210847
+    second: npc_brown_3
+  - first:
+      213: 1271668829944700835
+    second: npc_brown_4
+  - first:
+      213: 3449021102487737866
+    second: npc_brown_5
+  - first:
+      213: 8269939085373083928
+    second: npc_brown_6
+  - first:
+      213: 2754350455281731893
+    second: npc_brown_7
+  - first:
+      213: 2195153424020881828
+    second: npc_brown_8
+  - first:
+      213: 8964517048878574254
+    second: npc_brown_9
+  - first:
+      213: 3497517926205501993
+    second: npc_brown_10
+  - first:
+      213: -384462172334458572
+    second: npc_brown_11
+  - first:
+      213: 258454724982910786
+    second: npc_brown_12
+  - first:
+      213: 5346263687266428577
+    second: npc_brown_13
+  - first:
+      213: -5881928337067340833
+    second: npc_brown_14
+  - first:
+      213: -2177035111437421635
+    second: npc_brown_15
+  - first:
+      213: -8863941346411976707
+    second: npc_brown_16
+  - first:
+      213: 1659523064754855341
+    second: npc_brown_17
+  - first:
+      213: -7600154248600728273
+    second: npc_brown_18
+  - first:
+      213: 855638369986721431
+    second: npc_brown_19
+  - first:
+      213: -2111900429314857265
+    second: npc_brown_20
+  - first:
+      213: -1230497042724099198
+    second: npc_brown_21
+  - first:
+      213: -3730048357407780342
+    second: npc_brown_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_brown_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82196948e3baf44b0800000000000000
+      internalID: -5453952338721599192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_1
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1dfa5dcab531c40800000000000000
+      internalID: 5481825969317597617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59115ddef43e7c90800000000000000
+      internalID: -7170235287487833761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_3
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a528b5e8a7ea710800000000000000
+      internalID: 1706436060659210847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af5ac03010e5a110800000000000000
+      internalID: 1271668829944700835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a069b944b626ddf20800000000000000
+      internalID: 3449021102487737866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_6
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81118c938c9b4c270800000000000000
+      internalID: 8269939085373083928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_7
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539c00a552b693620800000000000000
+      internalID: 2754350455281731893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_8
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a14f32a860c67e10800000000000000
+      internalID: 2195153424020881828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_9
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa275982cc586c70800000000000000
+      internalID: 8964517048878574254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9223a03f50ea98030800000000000000
+      internalID: 3497517926205501993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439fd64f0bd1aaaf0800000000000000
+      internalID: -384462172334458572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fa029f337369300800000000000000
+      internalID: 258454724982910786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_13
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6e5137f7eb13a40800000000000000
+      internalID: 5346263687266428577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_14
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb0cca57513f5ea0800000000000000
+      internalID: -5881928337067340833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_15
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3383fb91e99c1e0800000000000000
+      internalID: -2177035111437421635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_16
+      rect:
+        serializedVersion: 2
+        x: 4232
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df767310f44fcf480800000000000000
+      internalID: -8863941346411976707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_17
+      rect:
+        serializedVersion: 2
+        x: 4937
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadd7435f6fc70710800000000000000
+      internalID: 1659523064754855341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1394
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d4afd6af3d68690800000000000000
+      internalID: -7600154248600728273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 720
+        width: 509
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796b04b6096dfdb00800000000000000
+      internalID: 855638369986721431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_20
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc661b5bfb501b2e0800000000000000
+      internalID: -2111900429314857265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_21
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28be24785756ceee0800000000000000
+      internalID: -1230497042724099198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_brown_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a021ea518c43c3cc0800000000000000
+      internalID: -3730048357407780342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
