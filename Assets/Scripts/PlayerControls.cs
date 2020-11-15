@@ -52,8 +52,8 @@ public class PlayerControls : MonoBehaviour
 
         if (carrying != null)
         {
-            Vector2 carriedPosition = interactionArea.offset;
-            carriedPosition.y += 0.5f;
+            Vector2 carriedPosition = interactionArea.offset * 0.5f;
+            carriedPosition.y += 0.25f;
             carrying.transform.localPosition = carriedPosition;
             
         }

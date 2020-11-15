@@ -467,6 +467,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3418287119001492641, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5527661196443274707, guid: 89cd51579c5e68345b031495039c06b6,
+        type: 3}
     - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: textBox
@@ -1993,6 +1999,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3418287119001492641, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2495014906627460004, guid: 89cd51579c5e68345b031495039c06b6,
+        type: 3}
     - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: textBox
@@ -2253,6 +2265,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3418287119001492641, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5610367206947713552, guid: 89cd51579c5e68345b031495039c06b6,
+        type: 3}
     - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: textBox
