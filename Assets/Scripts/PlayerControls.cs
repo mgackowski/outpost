@@ -13,6 +13,7 @@ public class PlayerControls : MonoBehaviour
     //private bool mainButtonPressed;
     private Vector2 movement;
     private Text debugText;
+    private AudioSource playerAudio;
 
     public float speed;
     public float orientation = 180;
@@ -26,6 +27,7 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
         debugText = GameObject.Find("DebugText").GetComponent<Text>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -52,10 +54,18 @@ public class PlayerControls : MonoBehaviour
 
         if (carrying != null)
         {
-            Vector2 carriedPosition = interactionArea.offset;
-            carriedPosition.y += 0.5f;
+            Vector2 carriedPosition = interactionArea.offset * 0.5f;
+            carriedPosition.y += 0.25f;
             carrying.transform.localPosition = carriedPosition;
             
+        }
+
+        if (movement.magnitude > 0)
+        {
+            playerAudio.enabled = true;
+        } else
+        {
+            playerAudio.enabled = false;
         }
 
     }
