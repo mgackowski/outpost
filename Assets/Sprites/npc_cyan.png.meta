@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 08c5e4892d746bd47bb294c8f9f36fd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8782391722417262923
+    second: npc_cyan_0
+  - first:
+      213: 2433808642489773165
+    second: npc_cyan_1
+  - first:
+      213: -6582432391548958945
+    second: npc_cyan_2
+  - first:
+      213: 6436149204108184399
+    second: npc_cyan_3
+  - first:
+      213: 8816372267236005079
+    second: npc_cyan_4
+  - first:
+      213: -2393208265491797411
+    second: npc_cyan_5
+  - first:
+      213: 8798818585442506818
+    second: npc_cyan_6
+  - first:
+      213: -7603583878264493658
+    second: npc_cyan_7
+  - first:
+      213: -7533129275231276358
+    second: npc_cyan_8
+  - first:
+      213: 5641363443704029816
+    second: npc_cyan_9
+  - first:
+      213: -302656016984701958
+    second: npc_cyan_10
+  - first:
+      213: -1518522681859846055
+    second: npc_cyan_11
+  - first:
+      213: 7007468024380673514
+    second: npc_cyan_12
+  - first:
+      213: 1453779653281589471
+    second: npc_cyan_13
+  - first:
+      213: -6034105075723204137
+    second: npc_cyan_14
+  - first:
+      213: 7394051027655140
+    second: npc_cyan_15
+  - first:
+      213: -3754568240782496659
+    second: npc_cyan_16
+  - first:
+      213: 1494150767378893469
+    second: npc_cyan_17
+  - first:
+      213: -5629019105976194000
+    second: npc_cyan_18
+  - first:
+      213: -1507496343717511748
+    second: npc_cyan_19
+  - first:
+      213: 3726968047204987203
+    second: npc_cyan_20
+  - first:
+      213: -9111355404179943325
+    second: npc_cyan_21
+  - first:
+      213: 2400195669536149944
+    second: npc_cyan_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_cyan_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41130d8db251e970800000000000000
+      internalID: 8782391722417262923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_1
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ce0e2c010a6c120800000000000000
+      internalID: 2433808642489773165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1703b77d9086a4a0800000000000000
+      internalID: -6582432391548958945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_3
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b0848d99bc15950800000000000000
+      internalID: 6436149204108184399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4153caddb0a5a70800000000000000
+      internalID: 8816372267236005079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a25d523cd99ced0800000000000000
+      internalID: -2393208265491797411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_6
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248d764a2eeab1a70800000000000000
+      internalID: 8798818585442506818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_7
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9682c8fb4aa7690800000000000000
+      internalID: -7603583878264493658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_8
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab27ebe16d2f47790800000000000000
+      internalID: -7533129275231276358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_9
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8726adea9262a4e40800000000000000
+      internalID: 5641363443704029816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30e72c4ffbccbf0800000000000000
+      internalID: -302656016984701958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950de549aaf1deae0800000000000000
+      internalID: -1518522681859846055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed4e108a078f3160800000000000000
+      internalID: 7007468024380673514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_13
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd82a8764ecdc2410800000000000000
+      internalID: 1453779653281589471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_14
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d90328576d824ca0800000000000000
+      internalID: -6034105075723204137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_15
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e954f8a9d44a1000800000000000000
+      internalID: 7394051027655140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_16
+      rect:
+        serializedVersion: 2
+        x: 4232
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c223bd31815ebc0800000000000000
+      internalID: -3754568240782496659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_17
+      rect:
+        serializedVersion: 2
+        x: 4937
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a0f72e43a4cb410800000000000000
+      internalID: 1494150767378893469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1394
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ce66a62f4b1e1b0800000000000000
+      internalID: -5629019105976194000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 720
+        width: 509
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd748cff0c441be0800000000000000
+      internalID: -1507496343717511748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_20
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34172ee41b9d8b330800000000000000
+      internalID: 3726968047204987203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_21
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360d48fa886fd8180800000000000000
+      internalID: -9111355404179943325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_cyan_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b11222ae353f4120800000000000000
+      internalID: 2400195669536149944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

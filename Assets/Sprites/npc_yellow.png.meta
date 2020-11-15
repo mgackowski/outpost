@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: aede5165f0858364e89ddf5b605b3295
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9183517759084935196
+    second: npc_yellow_0
+  - first:
+      213: -8693692357731631279
+    second: npc_yellow_1
+  - first:
+      213: 5293333413717559079
+    second: npc_yellow_2
+  - first:
+      213: 4025481098166827482
+    second: npc_yellow_3
+  - first:
+      213: -103165522152446378
+    second: npc_yellow_4
+  - first:
+      213: 5704824666166834094
+    second: npc_yellow_5
+  - first:
+      213: -178615361994295500
+    second: npc_yellow_6
+  - first:
+      213: 4894165158209869933
+    second: npc_yellow_7
+  - first:
+      213: -8139575532716880062
+    second: npc_yellow_8
+  - first:
+      213: -1103380731797057336
+    second: npc_yellow_9
+  - first:
+      213: 5946333238802408650
+    second: npc_yellow_10
+  - first:
+      213: 6840634251467837821
+    second: npc_yellow_11
+  - first:
+      213: -9069072107809530800
+    second: npc_yellow_12
+  - first:
+      213: -3202563165438045274
+    second: npc_yellow_13
+  - first:
+      213: -3805971869030528023
+    second: npc_yellow_14
+  - first:
+      213: 4903074191873188
+    second: npc_yellow_15
+  - first:
+      213: 5880674599454797582
+    second: npc_yellow_16
+  - first:
+      213: 1751149570559648963
+    second: npc_yellow_17
+  - first:
+      213: -2159418262523354461
+    second: npc_yellow_18
+  - first:
+      213: 7575848032312067632
+    second: npc_yellow_19
+  - first:
+      213: 7824236637094720529
+    second: npc_yellow_20
+  - first:
+      213: -1846191962489443393
+    second: npc_yellow_21
+  - first:
+      213: -2691912328959111740
+    second: npc_yellow_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_yellow_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18bfbadeb8627f70800000000000000
+      internalID: 9183517759084935196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_1
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3359
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fb0ee9cdcc95780800000000000000
+      internalID: -8693692357731631279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727475ac1b2b57940800000000000000
+      internalID: 5293333413717559079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_3
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 3359
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9784a1bb16dd730800000000000000
+      internalID: 4025481098166827482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6562903118b719ef0800000000000000
+      internalID: -103165522152446378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3b2c4fecb9b2f40800000000000000
+      internalID: 5704824666166834094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_6
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437f6ec464e658df0800000000000000
+      internalID: -178615361994295500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_7
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2663
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68513fe7419be340800000000000000
+      internalID: 4894165158209869933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_8
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f03f5ad2b6a0f80800000000000000
+      internalID: -8139575532716880062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_9
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 2663
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0d935021100b0f0800000000000000
+      internalID: -1103380731797057336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac46aee539e958250800000000000000
+      internalID: 5946333238802408650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d715c15cb90deee50800000000000000
+      internalID: 6840634251467837821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c1c9bc7fe242280800000000000000
+      internalID: -9069072107809530800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_13
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a39059d4c53e83d0800000000000000
+      internalID: -3202563165438045274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_14
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb4e4100c87e2bc0800000000000000
+      internalID: -3805971869030528023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_15
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 2008
+        width: 510
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4938be15b611000800000000000000
+      internalID: 4903074191873188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_16
+      rect:
+        serializedVersion: 2
+        x: 4232
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f6a2c146a5c9150800000000000000
+      internalID: 5880674599454797582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_17
+      rect:
+        serializedVersion: 2
+        x: 4937
+        y: 2008
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c429c5a1455d4810800000000000000
+      internalID: 1751149570559648963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1394
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2edc408843802e0800000000000000
+      internalID: -2159418262523354461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 720
+        width: 509
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0368d4695a1d22960800000000000000
+      internalID: 7575848032312067632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_20
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114b0a054c5459c60800000000000000
+      internalID: 7824236637094720529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_21
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 709
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba2a011320166e0800000000000000
+      internalID: -1846191962489443393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_yellow_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 509
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdc5e9cff764aad0800000000000000
+      internalID: -2691912328959111740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
