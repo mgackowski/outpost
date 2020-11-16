@@ -43,8 +43,10 @@ public class GameLogic : MonoBehaviour
         
 
 
-
-
+        if(Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
 
     }
 
