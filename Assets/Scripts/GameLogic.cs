@@ -26,6 +26,7 @@ public class GameLogic : MonoBehaviour
 
     public DropArea npcDrop;
     public GameObject player;
+    public OxygenGauge oxygenGauge;
 
     //public Door[] = new Door[3];
 
@@ -43,8 +44,10 @@ public class GameLogic : MonoBehaviour
         
 
 
-
-
+        if(Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
 
     }
 
@@ -81,7 +84,8 @@ public class GameLogic : MonoBehaviour
         while (oxygen > 0)
         {
             oxygen -= 1f;
-            timerText.text = System.TimeSpan.FromSeconds(oxygen).ToString("mm\\:ss");
+            //timerText.text = System.TimeSpan.FromSeconds(oxygen).ToString("mm\\:ss");
+            oxygenGauge.setDisplayedValue(oxygen);
             yield return new WaitForSeconds(oxygenDepletionRate);
         }
         gameplayText.ChangeAndFade("Can't... breathe...",3f);
