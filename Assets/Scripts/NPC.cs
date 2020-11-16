@@ -24,6 +24,7 @@ public class NPC : MonoBehaviour
     public TextControl textBox;
     public CameraTracker killCam;
     public GameObject player;
+    public MonitorAnimation npcScreen;
 
     private bool interactable = false;
     public bool carried = false;
@@ -98,34 +99,39 @@ public class NPC : MonoBehaviour
 
     void ChangeState(NPCState newState)
     {
-        if(state != newState) state = newState;
-        Color newColor;
-        switch (newState)
+        if (state != newState)
+        {
+            state = newState;
+            npcScreen.ChangeAnimation(newState);
+        }
+
+            //Color newColor;
+            switch (newState)
         {
             case NPCState.Incapacitated:
-                ColorUtility.TryParseHtmlString("#FF9200", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#FF9200", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 break;
             case NPCState.Unconscious:
-                ColorUtility.TryParseHtmlString("#C64900", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#C64900", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 break;
             case NPCState.Convulsing:
-                ColorUtility.TryParseHtmlString("#FF4400", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#FF4400", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 break;
             case NPCState.Flatlining:
-                ColorUtility.TryParseHtmlString("#FF0800", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#FF0800", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 break;
             case NPCState.Dead:
-                ColorUtility.TryParseHtmlString("#444444", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#444444", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 RiskBecomingZombie();
                 break;
             case NPCState.Zombie:
-                ColorUtility.TryParseHtmlString("#68826E", out newColor);
-                GetComponent<Renderer>().material.color = newColor;
+                //ColorUtility.TryParseHtmlString("#68826E", out newColor);
+                //GetComponent<Renderer>().material.color = newColor;
                 break;
         }
 
