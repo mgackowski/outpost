@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class DoorPanel : MonoBehaviour
 {
-    /*public enum State
+    public enum State
     {
         Closed,
         Minigame,
@@ -14,20 +14,24 @@ public class Door : MonoBehaviour
     }
 
     public GameObject doorMinigame;
+    public GameObject door;
+    public GameLogic logic;
 
     public State state = State.Closed;
     private bool interactable = false;
 
+    public int oxygenAward = 120;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(interactable && Input.GetButtonDown("Fire1"))
+        if (interactable && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Play minigame");
             state = State.Minigame;
@@ -36,19 +40,20 @@ public class Door : MonoBehaviour
 
         }
 
-        if(state == State.Opening)
+        if (state == State.Opening)
         {
-            gameObject.GetComponent<Collider2D>().enabled = false;
+            door.SetActive(false);
+            logic.oxygen += oxygenAward; //TODO: Magic number
             //gameObject.GetComponent<Renderer>().material.color = Color.green;
             state = State.Open;
         }
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Triggered");
-        if(collision.gameObject.CompareTag("PlayerFocus") && state == State.Closed)
+        if (collision.gameObject.CompareTag("PlayerFocus") && state == State.Closed)
         {
             //gameObject.GetComponent<Renderer>().material.color = Color.white;
             interactable = true;
@@ -70,7 +75,5 @@ public class Door : MonoBehaviour
             doorMinigame.SetActive(false);
         }
 
-    }*/
-
-
+    }
 }

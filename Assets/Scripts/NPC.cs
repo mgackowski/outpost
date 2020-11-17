@@ -25,6 +25,8 @@ public class NPC : MonoBehaviour
     public CameraTracker killCam;
     public GameObject player;
     public MonitorAnimation npcScreen;
+    public ScreenFade fade;
+    public GameLogic logic;
 
     private bool interactable = false;
     public bool carried = false;
@@ -81,7 +83,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator LoseHealth()
     {
-        while (state != NPCState.Dead)
+        while (state != NPCState.Dead || state != NPCState.Zombie)
         {
             if (health > 50) ChangeState(NPCState.Incapacitated);
             else if (health > 20) ChangeState(NPCState.Unconscious);
@@ -97,7 +99,7 @@ public class NPC : MonoBehaviour
 
 
 
-    void ChangeState(NPCState newState)
+    public void ChangeState(NPCState newState)
     {
         if (state != newState)
         {
@@ -127,9 +129,11 @@ public class NPC : MonoBehaviour
             case NPCState.Dead:
                 //ColorUtility.TryParseHtmlString("#444444", out newColor);
                 //GetComponent<Renderer>().material.color = newColor;
+                StopCoroutine("LoseHealth");
                 RiskBecomingZombie();
                 break;
             case NPCState.Zombie:
+                StopCoroutine("LoseHealth");
                 //ColorUtility.TryParseHtmlString("#68826E", out newColor);
                 //GetComponent<Renderer>().material.color = newColor;
                 break;
@@ -149,14 +153,21 @@ public class NPC : MonoBehaviour
         {
             TurnToZombie();
         }
+        else
+        {
+            logic.increaseZombieChanceBy(0.25f);
+        }
 
     }
 
     private void TurnToZombie()
     {
-        state = NPCState.Zombie;
-        textBox.ChangeAndFade("One of dead was infected. You have no chance to win this.\nGAME OVER", 5f);
+        ChangeState(NPCState.Zombie);
+        logic.StartCoroutine("SingleZombieEnding");
         killCam.target = gameObject.transform;
+        //player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        //player.GetComponent<PlayerControls>().enabled = false;
+        //fade.FadeToBlack();
         //Time.timeScale = 0; //GAME OVER
 
     }
