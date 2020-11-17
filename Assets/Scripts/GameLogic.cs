@@ -12,7 +12,7 @@ public class GameLogic : MonoBehaviour
         Play,
         Finish,
         Over
-        
+
     }
 
     public GameState state;
@@ -28,13 +28,14 @@ public class GameLogic : MonoBehaviour
     public GameObject player;
     public OxygenGauge oxygenGauge;
 
-    //public Door[] = new Door[3];
+    public DoorPanel[] airlocks = new DoorPanel[3];
+    public NPC[] npcs = new NPC[4];
 
     // Start is called before the first frame update
     void Start()
     {
         //ChangeState(GameState.Intro);
-        ChangeState(GameState.Play);
+        ChangeState(GameState.Intro);
     }
 
     // Update is called once per frame
@@ -57,9 +58,7 @@ public class GameLogic : MonoBehaviour
         switch (newState)
         {
             case GameState.Intro:
-                StopCoroutine("LoseOxygen");
-                fade.ChangeToBlack();
-                fade.FadeFromBlack();
+                StartCoroutine("PlayIntro");
                 break;
             case GameState.Play:
                 StartCoroutine("LoseOxygen");
@@ -84,11 +83,27 @@ public class GameLogic : MonoBehaviour
         while (oxygen > 0)
         {
             oxygen -= 1f;
-            //timerText.text = System.TimeSpan.FromSeconds(oxygen).ToString("mm\\:ss");
             oxygenGauge.setDisplayedValue(oxygen);
             yield return new WaitForSeconds(oxygenDepletionRate);
         }
         gameplayText.ChangeAndFade("Can't... breathe...",3f);
         ChangeState(GameState.Over);
+    }
+
+    IEnumerator PlayIntro()
+    {
+        StopCoroutine("LoseOxygen");
+        fade.ChangeToBlack();
+        yield return new WaitForSeconds(1f);
+        gameplayText.ChangeAndFade("Got... to... get out...",2f);
+        yield return new WaitForSeconds(6f);
+        gameplayText.ChangeAndFade("Carry the others to safety...", 2f);
+        yield return new WaitForSeconds(6f);
+        gameplayText.ChangeAndFade("Before we all suffocate... or worse.", 2f);
+        yield return new WaitForSeconds(6f);
+        fade.FadeFromBlack();
+        yield return new WaitForSeconds(1f);
+        state = GameState.Play;
+
     }
 }
