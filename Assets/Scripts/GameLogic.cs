@@ -37,8 +37,7 @@ public class GameLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //ChangeState(GameState.Intro);
-        ChangeState(GameState.Play);
+        ChangeState(GameState.Intro);
     }
 
     // Update is called once per frame
