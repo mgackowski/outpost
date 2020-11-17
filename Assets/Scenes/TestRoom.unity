@@ -202,6 +202,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &37366914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37366917}
+  - component: {fileID: 37366916}
+  - component: {fileID: 37366915}
+  m_Layer: 0
+  m_Name: SafeRoomTutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &37366915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37366914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7794cc7657d84489605e32a73f0e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameplayText: {fileID: 553477753}
+  message: The safe room can only hold three survivors...
+--- !u!61 &37366916
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37366914}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.26749325, y: 1.2402}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.44467, y: 2.6049576}
+  m_EdgeRadius: 0
+--- !u!4 &37366917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37366914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.4, y: 39.5, z: -640.0215}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90856278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,12 +1388,12 @@ PrefabInstance:
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.53
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.57
+      value: 40.3
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
@@ -1409,6 +1481,16 @@ PrefabInstance:
       propertyPath: npcScreen
       value: 
       objectReference: {fileID: 1404283878}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 2053978439}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 3418287119001492643, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_Name
@@ -4008,7 +4090,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03665626, y: -0.09392488}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4019,7 +4101,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4116771, y: 1.3381312}
   m_EdgeRadius: 0
 --- !u!50 &853557404
 Rigidbody2D:
@@ -4050,7 +4132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853557401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 8.84, z: -636.2788}
+  m_LocalPosition: {x: 13.65, y: 48.47, z: -636.2788}
   m_LocalScale: {x: 8.717067, y: 5.233862, z: 0.96588}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14751,12 +14833,12 @@ PrefabInstance:
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.46
+      value: 21.78
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.87
+      value: 40.35
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
@@ -14849,6 +14931,16 @@ PrefabInstance:
       propertyPath: npcScreen
       value: 
       objectReference: {fileID: 226818102}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 2053978439}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 3418287119001492643, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_Name
@@ -15322,7 +15414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964852520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.509, y: 2.344, z: -5.09}
+  m_LocalPosition: {x: 24.71, y: 41.07, z: -5.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 35213362}
@@ -15612,12 +15704,12 @@ PrefabInstance:
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.71
+      value: 18.58
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.67
+      value: 40.51
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
@@ -15715,6 +15807,16 @@ PrefabInstance:
       propertyPath: loseRate
       value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 2053978439}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 3418287119001492643, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_Name
@@ -15761,7 +15863,7 @@ MonoBehaviour:
   npcDrop: {fileID: 853557402}
   player: {fileID: 1964852520}
   oxygenGauge: {fileID: 364873846}
-  musicSource: {fileID: 0}
+  musicSource: {fileID: 519420033}
   airlocks:
   - {fileID: 1563154012}
   - {fileID: 128683573}
@@ -16410,12 +16512,12 @@ PrefabInstance:
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.21
+      value: 6.91
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.99
+      value: 40.25
       objectReference: {fileID: 0}
     - target: {fileID: 3418287119001492640, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
@@ -16507,6 +16609,16 @@ PrefabInstance:
       propertyPath: npcScreen
       value: 
       objectReference: {fileID: 620680471}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 2053978439}
+    - target: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 3418287119001492643, guid: 554b8c99f9f850e4b86480ee83d66831,
         type: 3}
       propertyPath: m_Name

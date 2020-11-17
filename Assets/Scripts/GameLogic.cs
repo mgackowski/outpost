@@ -44,6 +44,20 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+               
+        if(Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
+        if (Input.GetKeyDown("t"))
+        {
+            ChangeState(GameState.Finish);
+        }
+
+    }
+
+    private void LateUpdate()
+    {
         foreach (NPC npc in liveNpcs.ToList())
         {
             if (npc.state == NPC.NPCState.Dead)
@@ -53,18 +67,6 @@ public class GameLogic : MonoBehaviour
         }
         int npcToSave = Mathf.Clamp(liveNpcs.Count, 0, maxNPCsToSave);
         if (npcDrop.npcCount == npcToSave)
-        {
-            ChangeState(GameState.Finish);
-        }
-        
-        
-
-
-        if(Input.GetButtonDown("Cancel"))
-        {
-            Application.Quit();
-        }
-        if (Input.GetKeyDown("t"))
         {
             ChangeState(GameState.Finish);
         }
@@ -94,6 +96,14 @@ public class GameLogic : MonoBehaviour
         }
 
 
+    }
+
+    public void increaseZombieChanceBy(float chance)
+    {
+        foreach (NPC npc in liveNpcs.ToList())
+        {
+            Mathf.Clamp(npc.chanceOfZombie += chance, 0, 1);
+        }
     }
 
     IEnumerator LoseOxygen()
@@ -132,8 +142,8 @@ public class GameLogic : MonoBehaviour
         player.GetComponent<PlayerControls>().enabled = false;
         fade.FadeToBlack();
         yield return new WaitForSeconds(1f);
-        gameplayText.ChangeAndFade("We've made it to the safety room... now we have a chance...", 4f);
-        yield return new WaitForSeconds(7f);
+        gameplayText.ChangeAndFade("We've made it to the safety room... now we have a chance...", 3f);
+        yield return new WaitForSeconds(8f);
         musicSource.Stop();
 
 
@@ -144,11 +154,22 @@ public class GameLogic : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(6f);
         gameplayText.ChangeAndFade("\"As long as we have each other, we will never run out of problems...\"", 10f);
-        yield return new WaitForSeconds(14);
+        yield return new WaitForSeconds(14f);
         gameplayText.change("THE END");
 
+
+    }
+
+    IEnumerator SingleZombieEnding()
+    {
+        StopCoroutine("LoseOxygen");
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        player.GetComponent<PlayerControls>().enabled = false;
+        gameplayText.change("One of dead was infected. You run, but you cannot escape.\nGAME OVER");
+        fade.FadeToBlack();
+        yield return null;
 
     }
 

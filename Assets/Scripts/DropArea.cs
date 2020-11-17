@@ -18,7 +18,7 @@ public class DropArea : MonoBehaviour
     {
         int count = 0;
         foreach (NPC npc in presentNPCs) {
-            if(!npc.carried && (npc.state != NPC.NPCState.Dead || npc.state != NPC.NPCState.Zombie))
+            if(!npc.carried && npc.state != NPC.NPCState.Dead && npc.state != NPC.NPCState.Zombie)
             {
                count += 1;
             }

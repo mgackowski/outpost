@@ -25,6 +25,8 @@ public class NPC : MonoBehaviour
     public CameraTracker killCam;
     public GameObject player;
     public MonitorAnimation npcScreen;
+    public ScreenFade fade;
+    public GameLogic logic;
 
     private bool interactable = false;
     public bool carried = false;
@@ -151,14 +153,21 @@ public class NPC : MonoBehaviour
         {
             TurnToZombie();
         }
+        else
+        {
+            logic.increaseZombieChanceBy(0.25f);
+        }
 
     }
 
     private void TurnToZombie()
     {
-        state = NPCState.Zombie;
-        textBox.ChangeAndFade("One of dead was infected. You run, but you cannot escape.\nGAME OVER", 5f);
+        ChangeState(NPCState.Zombie);
+        logic.StartCoroutine("SingleZombieEnding");
         killCam.target = gameObject.transform;
+        //player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        //player.GetComponent<PlayerControls>().enabled = false;
+        //fade.FadeToBlack();
         //Time.timeScale = 0; //GAME OVER
 
     }
