@@ -15,9 +15,12 @@ public class DoorPanel : MonoBehaviour
 
     public GameObject doorMinigame;
     public GameObject door;
+    public GameLogic logic;
 
     public State state = State.Closed;
     private bool interactable = false;
+
+    public int oxygenAward = 120;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,7 @@ public class DoorPanel : MonoBehaviour
         if (state == State.Opening)
         {
             door.SetActive(false);
+            logic.oxygen += oxygenAward; //TODO: Magic number
             //gameObject.GetComponent<Renderer>().material.color = Color.green;
             state = State.Open;
         }

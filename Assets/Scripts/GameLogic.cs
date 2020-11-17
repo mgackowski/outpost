@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ public class GameLogic : MonoBehaviour
 
     public float oxygen = 300f;
     public float oxygenDepletionRate = 1f;
+    public int maxNPCsToSave = 3;
 
     public TextControl gameplayText;
     public Text timerText;
@@ -27,20 +29,33 @@ public class GameLogic : MonoBehaviour
     public DropArea npcDrop;
     public GameObject player;
     public OxygenGauge oxygenGauge;
+    public AudioSource musicSource;
 
     public DoorPanel[] airlocks = new DoorPanel[3];
-    public NPC[] npcs = new NPC[4];
+    public List<NPC> liveNpcs = new List<NPC>();
 
     // Start is called before the first frame update
     void Start()
     {
         //ChangeState(GameState.Intro);
-        ChangeState(GameState.Intro);
+        ChangeState(GameState.Play);
     }
 
     // Update is called once per frame
     void Update()
     {
+        foreach (NPC npc in liveNpcs.ToList())
+        {
+            if (npc.state == NPC.NPCState.Dead)
+            {
+                liveNpcs.Remove(npc);
+            }
+        }
+        int npcToSave = Mathf.Clamp(liveNpcs.Count, 0, maxNPCsToSave);
+        if (npcDrop.npcCount == npcToSave)
+        {
+            ChangeState(GameState.Finish);
+        }
         
         
 
@@ -48,6 +63,10 @@ public class GameLogic : MonoBehaviour
         if(Input.GetButtonDown("Cancel"))
         {
             Application.Quit();
+        }
+        if (Input.GetKeyDown("t"))
+        {
+            ChangeState(GameState.Finish);
         }
 
     }
@@ -64,8 +83,7 @@ public class GameLogic : MonoBehaviour
                 StartCoroutine("LoseOxygen");
                 break;
             case GameState.Finish:
-                StopCoroutine("LoseOxygen");
-                fade.FadeToBlack();
+                StartCoroutine("PlayEnding");
                 break;
             case GameState.Over:
                 StopCoroutine("LoseOxygen");
@@ -103,7 +121,35 @@ public class GameLogic : MonoBehaviour
         yield return new WaitForSeconds(6f);
         fade.FadeFromBlack();
         yield return new WaitForSeconds(1f);
-        state = GameState.Play;
+        ChangeState(GameState.Play);
 
     }
+
+    IEnumerator PlayEnding()
+    {
+        StopCoroutine("LoseOxygen");
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        player.GetComponent<PlayerControls>().enabled = false;
+        fade.FadeToBlack();
+        yield return new WaitForSeconds(1f);
+        gameplayText.ChangeAndFade("We've made it to the safety room... now we have a chance...", 4f);
+        yield return new WaitForSeconds(7f);
+        musicSource.Stop();
+
+
+        foreach (NPC npc in liveNpcs)
+        {
+            npc.ChangeState(NPC.NPCState.Zombie);
+            //npc.health = -1f;
+
+        }
+
+        yield return new WaitForSeconds(4);
+        gameplayText.ChangeAndFade("\"As long as we have each other, we will never run out of problems...\"", 10f);
+        yield return new WaitForSeconds(14);
+        gameplayText.change("THE END");
+
+
+    }
+
 }

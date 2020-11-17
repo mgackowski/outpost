@@ -1535,6 +1535,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorPanel2
       objectReference: {fileID: 0}
+    - target: {fileID: 1481711535257142437, guid: 919bd22f301b0bd47afb99e55f6884f7,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 1481711535257142439, guid: 919bd22f301b0bd47afb99e55f6884f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1789,6 +1794,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &456876369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+    type: 3}
+  m_PrefabInstance: {fileID: 2072476113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1ed6fdd60c6f547b96adc0b22e35ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491952666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,8 +2302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -158.5}
-  m_SizeDelta: {x: 997, y: 317}
+  m_AnchoredPosition: {x: -26, y: -150}
+  m_SizeDelta: {x: 528.4059, y: 299.98724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553477753
 MonoBehaviour:
@@ -2314,15 +2331,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_Font: {fileID: 12800000, guid: 92de7f03c784ab444ae68ef7c610d0e6, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2331,7 +2348,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &553477755
@@ -3758,6 +3775,18 @@ Transform:
   m_Father: {fileID: 766257463}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803267764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+    type: 3}
+  m_PrefabInstance: {fileID: 1843399144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1ed6fdd60c6f547b96adc0b22e35ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &836093160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,6 +4218,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &963447850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+    type: 3}
+  m_PrefabInstance: {fileID: 337702465}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1ed6fdd60c6f547b96adc0b22e35ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000839491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorPanel3
       objectReference: {fileID: 0}
+    - target: {fileID: 1481711535257142437, guid: 919bd22f301b0bd47afb99e55f6884f7,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 1481711535257142439, guid: 919bd22f301b0bd47afb99e55f6884f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14347,6 +14393,18 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1690914597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3418287119001492642, guid: 554b8c99f9f850e4b86480ee83d66831,
+    type: 3}
+  m_PrefabInstance: {fileID: 3418287120495145891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690914593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1ed6fdd60c6f547b96adc0b22e35ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705448372
 GameObject:
   m_ObjectHideFlags: 0
@@ -15696,16 +15754,23 @@ MonoBehaviour:
   state: 1
   oxygen: 600
   oxygenDepletionRate: 1
+  maxNPCsToSave: 3
   gameplayText: {fileID: 553477753}
   timerText: {fileID: 839605269}
   fade: {fileID: 2053978439}
   npcDrop: {fileID: 853557402}
   player: {fileID: 1964852520}
   oxygenGauge: {fileID: 364873846}
+  musicSource: {fileID: 0}
   airlocks:
   - {fileID: 1563154012}
   - {fileID: 128683573}
   - {fileID: 1782554609}
+  liveNpcs:
+  - {fileID: 456876369}
+  - {fileID: 803267764}
+  - {fileID: 963447850}
+  - {fileID: 1690914597}
 --- !u!4 &2076472725
 Transform:
   m_ObjectHideFlags: 0
@@ -16273,6 +16338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorPanel1
       objectReference: {fileID: 0}
+    - target: {fileID: 1481711535257142437, guid: 919bd22f301b0bd47afb99e55f6884f7,
+        type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 2076472724}
     - target: {fileID: 1481711535257142439, guid: 919bd22f301b0bd47afb99e55f6884f7,
         type: 3}
       propertyPath: m_LocalPosition.x

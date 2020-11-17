@@ -81,7 +81,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator LoseHealth()
     {
-        while (state != NPCState.Dead)
+        while (state != NPCState.Dead || state != NPCState.Zombie)
         {
             if (health > 50) ChangeState(NPCState.Incapacitated);
             else if (health > 20) ChangeState(NPCState.Unconscious);
@@ -97,7 +97,7 @@ public class NPC : MonoBehaviour
 
 
 
-    void ChangeState(NPCState newState)
+    public void ChangeState(NPCState newState)
     {
         if (state != newState)
         {
@@ -127,9 +127,11 @@ public class NPC : MonoBehaviour
             case NPCState.Dead:
                 //ColorUtility.TryParseHtmlString("#444444", out newColor);
                 //GetComponent<Renderer>().material.color = newColor;
+                StopCoroutine("LoseHealth");
                 RiskBecomingZombie();
                 break;
             case NPCState.Zombie:
+                StopCoroutine("LoseHealth");
                 //ColorUtility.TryParseHtmlString("#68826E", out newColor);
                 //GetComponent<Renderer>().material.color = newColor;
                 break;
@@ -155,7 +157,7 @@ public class NPC : MonoBehaviour
     private void TurnToZombie()
     {
         state = NPCState.Zombie;
-        textBox.ChangeAndFade("One of dead was infected. You have no chance to win this.\nGAME OVER", 5f);
+        textBox.ChangeAndFade("One of dead was infected. You run, but you cannot escape.\nGAME OVER", 5f);
         killCam.target = gameObject.transform;
         //Time.timeScale = 0; //GAME OVER
 
