@@ -17,7 +17,7 @@ public class HealingMinigame : MonoBehaviour
     {
 
         //TODO: Flesh out minigame
-        if (npc.state != NPC.NPCState.Dead && Input.GetKey("o"))
+        if (npc.state != NPC.NPCState.Dead && Input.GetButton("Fire3"))
         {
             npc.Heal();
             gameObject.SetActive(false);

@@ -16,7 +16,7 @@ public class DoorMinigame : MonoBehaviour
     void Update()
     {
         //TODO: Flesh out minigame
-        if(door.state == DoorPanel.State.Minigame && Input.GetKey("o"))
+        if(door.state == DoorPanel.State.Minigame && Input.GetButton("Fire3"))
         {
             door.state = DoorPanel.State.Opening;
             gameObject.SetActive(false);
