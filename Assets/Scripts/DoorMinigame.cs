@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorMinigame : MonoBehaviour
 {
-    public Door door;
+    public DoorPanel door;
 
     // Start is called before the first frame update
     void Start()
@@ -16,15 +16,15 @@ public class DoorMinigame : MonoBehaviour
     void Update()
     {
         //TODO: Flesh out minigame
-        if(door.state == Door.State.Minigame && Input.GetKey("o"))
+        if(door.state == DoorPanel.State.Minigame && Input.GetKey("o"))
         {
-            door.state = Door.State.Opening;
+            door.state = DoorPanel.State.Opening;
             gameObject.SetActive(false);
         }
 
-        if (door.state == Door.State.Minigame && Input.GetKey("l"))
+        if (door.state == DoorPanel.State.Minigame && Input.GetKey("l"))
         {
-            door.state = Door.State.Lockdown;
+            door.state = DoorPanel.State.Lockdown;
         }
 
     }
