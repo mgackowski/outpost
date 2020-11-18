@@ -266,12 +266,13 @@ MonoBehaviour:
   health: 100
   loseRate: 0.01
   cprMinigame: {fileID: 3418287120152194016}
-  chanceOfZombie: 0
+  chanceOfZombie: 0.25
   textBox: {fileID: 0}
   killCam: {fileID: 0}
   player: {fileID: 0}
   npcScreen: {fileID: 0}
   fade: {fileID: 0}
+  logic: {fileID: 0}
   carried: 0
 --- !u!50 &3418287119001492646
 Rigidbody2D:

@@ -44,10 +44,10 @@ public class GameLogic : MonoBehaviour
     void Update()
     {
                
-        if(Input.GetButtonDown("Cancel"))
+        /*if(Input.GetButtonDown("Cancel"))
         {
             Application.Quit();
-        }
+        }*/
         if (Input.GetKeyDown("t"))
         {
             ChangeState(GameState.Finish);
